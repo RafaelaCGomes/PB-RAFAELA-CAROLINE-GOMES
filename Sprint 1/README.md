@@ -1,28 +1,19 @@
-# Instruções
-
-Este arquivo será o relato da sua entrega. Neste arquivo você fará a organização geral ao longo da Sprint. Esperamos que haja, minimamente:
-
-- Uma ou mais seções para descrever o que estiver aprendendo (resumo), de maneira estruturada.
-
-- Breve conteúdo de cada pasta relacionada a sprint.
-
-# Resumo
+# Resumo da Sprint 1
 
 **Git Hub:** Aprendi isso, isso e mais aquilo.
 
-**Linux:** Pude entender como funciona isso e aquilo.
+**Linux:** Pude aprender diversos comandos básicos do Linux e suas funções, como gerenciar arquivos e diretórios, tive contato a informações importantes sobre os editores de texto que foram informações essenciais para a resolução do desafio. 
+
+Outro tópico muito importante foi sobre o gerenciamento de permissões, onde puder entender quais tipos de permissões que existe e como faço para alterál-as. Além disso, a compactação de arquivos também foi abordadada no curso, sendo utilizado na resolução do desafio da sprint 1.
+
+Resumo de comandos e suas respectivas funções.
+![Resumo de comandos e suas funções]()
+
+
+
 
 # Exercícios
-
-
-1. ...
-[Resposta Ex1.](exercicios/ex1.txt)
-
-
-2. ...
-[Resposta Ex2.](exercicios/ex2.txt)
-
-
+Nessa sprint não houve exercícios, somente alguns quiz ao final de seções nos cursos de Linux e GuitHub.
 
 # Evidências
 
