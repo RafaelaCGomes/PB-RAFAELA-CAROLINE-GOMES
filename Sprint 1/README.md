@@ -29,7 +29,7 @@ Este arquivo será o relato da sua entrega. Neste arquivo você fará a organiza
 
 Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
 
-![Evidencia 1](evidencias/sample.webp)
+![Evidencia 1](https://github.com/RafaelaCGomes/Programa_de_bolsas/blob/main/Sprint%201/Certificados/Cert_Udemy_Linux.jpg)
 
 
 # Certificados
