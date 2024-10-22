@@ -1,11 +1,8 @@
-Olá, sou estudane de engenhharia de computação da Univesp, resido na cidade de Bariri, estado de São Paulo,
-com informações como cidade de residência, instituição de ensino, curso e semestre atual, experiências na área de tecnologia (se houver), hobbies e outras informações que você julgar importante para os monitores.
+Olá! Sou estudante de Engenharia da Computação na Univesp e estou cursando o 3° semestre. Atualmente resido na cidade de Bariri, estado de São Paulo. Na área da tecnologia, a unica experiência que tive foi as atividades realizadas durante as aulas da faculdade mas me interesso pelo desenvolvimento profissonal e pessoal nessa área, principalmente pela facilidade com tecnologia que possuo.
+Durante dois anos lecionei Ciências no ensino fundamental na cidade que resido, o que me ajudou a aprimorar minhas habilidades de comunicação, didática e paciência. Além de reforçar caracteristicas pessoais como proatividade, persistência e organização.
+No meu tempo livre, gosto de ciclismo, academia, corrida ao ar livre e leitura, atividades que me ajudam a manter a mente ativa e equilibrar a rotina.
 
-- Uma ou mais seções para descrever o que estiver aprendendo (resumo), de maneira estruturada. Na medida que você avança no programa de bolsas, deverá alimentar para criar um portfólio de seus estudos.
-
-- De forma opcional, sugerimos que você adicione uma foto ao seu perfil do GitHub, pois utilizamos tal informação para facilitar a sua identificação ao longo do processo. Lembre-se que a informação é pública, tal qual você pode testar no exemplo do repositório da [
-The Apache Software Foundation](https://github.com/apache.png?size=250).
-
+ ![Minha foto]()
 
 
 
