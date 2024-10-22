@@ -7,7 +7,7 @@
 Outro tópico muito importante foi sobre o gerenciamento de permissões, onde puder entender quais tipos de permissões que existe e como faço para alterál-as. Além disso, a compactação de arquivos também foi abordadada no curso, sendo utilizado na resolução do desafio da sprint 1.
 
 Resumo de comandos e suas respectivas funções.
-![Resumo de comandos e suas funções]()
+![Resumo de comandos e suas funções](https://github.com/RafaelaCGomes/Programa_de_bolsas/blob/main/Sprint%201/evidencias/Resumo_comandos_linux.txt)
 
 
 
