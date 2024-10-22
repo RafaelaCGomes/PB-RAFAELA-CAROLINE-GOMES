@@ -1,0 +1,12 @@
+Resumo de  comando e funções.
+
+Comando:Funções
+
+cd : Entra em diretórios.
+cd-- : Volta ao diretório anterior.
+cd nome_dir : Entra no diretório chamado nome_dir.
+ls : Lista arquivos e diretórios .
+ls -l : Mostra detalhes dos arquivos, como permissões.
+clear : Limpa a tela do terminal.
+cat nome_arq : Mostra o conteudo do arquivo.
+touch nome.txt : Cria um arquivo nome.txt.
