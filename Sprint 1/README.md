@@ -35,8 +35,8 @@ Ao executar o código do exercício ... observei que ... conforme podemos ver na
 # Certificados
 
 
-Certificado do Curso ABC
+Certificado do Curso Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)
 
-![Curso ABC](certificados/sample.png)
+![Curso Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)](certificados/Cert_Udemy_Linux.jpg)
 
 
