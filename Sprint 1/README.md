@@ -1,4 +1,5 @@
 # Resumo da Sprint 1
+Nessa Sprint entrei em contato com o sistema Linux e aprendi como instalar e organizar um repositório no GitHu.
 
 **Git Hub:** Aprendi isso, isso e mais aquilo.
 
@@ -7,27 +8,20 @@
 Outro tópico muito importante foi sobre o gerenciamento de permissões, onde puder entender quais tipos de permissões que existe e como faço para alterál-as. Além disso, a compactação de arquivos também foi abordadada no curso, sendo utilizado na resolução do desafio da sprint 1.
 
 Resumo de comandos e suas respectivas funções.
-![Resumo de comandos e suas funções](https://github.com/RafaelaCGomes/Programa_de_bolsas/blob/main/Sprint%201/evidencias/Resumo_comandos_linux.txt)
+![Resumo de comandos e suas funções](../Sprint1/Evidencias/Resumo_comandos_linux.txt)
+
 
 
 
 
 # Exercícios
-Nessa sprint não houve exercícios, somente alguns quiz ao final de seções nos cursos de Linux e GuitHub.
+Nessa sprint não houve exercícios, somente alguns quizes ao final de seções nos cursos de Linux e GuitHub.
 
 # Evidências
 
-
-Ao executar o código do exercício ... observei que ... conforme podemos ver na imagem a seguir:
 
 ![Evidencia 1]()
 
 
 # Certificados
-
-
-Certificado do Curso Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)
-
-![Curso Linux para Desenvolvedores (c/ terminal, Shell, Apache e +)](https://github.com/RafaelaCGomes/Programa_de_bolsas/blob/main/Sprint%201/Certificados/Cert_Udemy_Linux.jpg)
-
 
