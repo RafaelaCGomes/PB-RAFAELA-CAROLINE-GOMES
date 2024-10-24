@@ -5,13 +5,10 @@ Durante dois anos lecionei Ciências no ensino fundamental na cidade que resido,
 No meu tempo livre, gosto de ciclismo, academia, corrida ao ar livre e leitura, atividades que me ajudam a manter a mente ativa e equilibrar a rotina.
 
 
- ![Minha foto](https://github.com/RafaelaCGomes/Programa_de_bolsas/blob/main/Minha_foto.jpg)
+![Minha foto](Minha_foto.jpg)
 
 
 
 ## Sprints 
 
 1. [Sprint 1](Sprint%201/README.md)
-2. [Sprint 2](Sprint%202/README.md)
-3. [Sprint 3](Sprint%203/README.md)
-4. ...
