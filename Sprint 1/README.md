@@ -8,7 +8,7 @@ Nessa Sprint, foi dado como objetivo desenvolver scripts executáveis em linux e
 Outro tópico muito importante foi sobre o gerenciamento de permissões, onde puder entender quais tipos de permissões que existe e como faço para alterál-as. Além disso, a compactação de arquivos também foi abordadada no curso, sendo utilizado na resolução do desafio da sprint 1.
 
 Resumo de comandos e suas respectivas funções.
-![Resumo de comandos e suas funções](../Sprint1/Evidencias/Resumo_comandos_linux.txt)
+![Resumo de comandos e suas funções](Evidencias/Resumo_comandos_linux.txt)
 
 
 
