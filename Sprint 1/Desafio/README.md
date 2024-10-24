@@ -6,9 +6,9 @@ Foi fornecido um arquivo dados_de_vendas.csv, de onde foi extraido os dados para
 # Etapas da criação dos scripts executáveis
 Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o intuito de ir corrigindo os erros de sintax e pontuações durante o processo de escrita.
 
-**Script01.** ... [Etapa I](etapa-1)
+##Script01. ... [Etapa I](etapa-1)
 
-    Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
+   1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
     ![Problema de permissão](../Evidencias/sample.webp)
 
@@ -17,7 +17,7 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
      ![Cabeçalho](../Evidencias/sample.webp)
 
     Após isso, dei inícios aos comandos de criação de diretório, subdiretório e realização da cópia do arquivo dados_de_vendas.csv para dentro do diretório, sendo utilizado o código:
-    ...
+    ...linux
     DIRETORIO_VENDAS="/home/rafaela/ecommerce/vendas"
     if [ -d "$DIRETORIO_VENDAS" ]; then
         echo "O diretório vendas já existe"
@@ -42,8 +42,9 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
 
     
 
+##Script02...[Etapa II](etapa-2)
 
-2. ... [Etapa II](etapa-2)
+2. ... 
 
     Já com esse código, o objetivo é ...
 
