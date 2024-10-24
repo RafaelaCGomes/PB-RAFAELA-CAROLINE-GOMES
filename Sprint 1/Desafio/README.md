@@ -8,15 +8,15 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
 
 ##Script01. ... [Etapa I](etapa-1)
 
-   1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
+1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
-    ![Problema de permissão](../Evidencias/sample.webp)
+![Problema de permissão](../Evidencias/sample.webp)
 
-    Comecei a criação do executável criando um cabeçalho onde há informações importantes como nome do autor, breve descrição da função do script e como ele será executado.
+ Comecei a criação do executável criando um cabeçalho onde há informações importantes como nome do autor, breve descrição da função do script e como ele será executado.
 
-     ![Cabeçalho](../Evidencias/sample.webp)
+![Cabeçalho](../Evidencias/sample.webp)
 
-    Após isso, dei inícios aos comandos de criação de diretório, subdiretório e realização da cópia do arquivo dados_de_vendas.csv para dentro do diretório, sendo utilizado o código:
+Após isso, dei inícios aos comandos de criação de diretório, subdiretório e realização da cópia do arquivo dados_de_vendas.csv para dentro do diretório, sendo utilizado o código:
     ...linux
     DIRETORIO_VENDAS="/home/rafaela/ecommerce/vendas"
     if [ -d "$DIRETORIO_VENDAS" ]; then
@@ -37,8 +37,8 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
     cp "$ARQUIVOS_DADOS" "vendas"
     echo "Arquivo dados_de_vendas copiado para o diretório vendas"
     ...
-    Tendo como saída
-    ![Criação vendas, backup e cópia de dados_de_vendas]()
+Tendo como saída
+![Criação vendas, backup e cópia de dados_de_vendas]()
 
     
 
@@ -46,11 +46,11 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
 
 2. ... 
 
-    Já com esse código, o objetivo é ...
+Já com esse código, o objetivo é ...
 
-    ```
-    Esta é uma outra linha de código
-    ```
+```
+Esta é uma outra linha de código
+```
     
 
 
