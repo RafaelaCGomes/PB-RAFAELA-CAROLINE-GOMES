@@ -1,7 +1,7 @@
 # Resumo da Sprint 1
-Nessa Sprint entrei em contato com o sistema Linux e aprendi como instalar e organizar um repositório no GitHu.
+Nessa Sprint, foi dado como objetivo desenvolver scripts executáveis em linux e instalar e configurar o Git e GitHub. Para isso, foi fornecido dois cursos onde ajudou a entender comandos básicos da linguagem linux e como configurar o GitHub. 
 
-**Git Hub:** Aprendi isso, isso e mais aquilo.
+**Git Hub:** No curso de GitHub, aprendi a criar minha conta na plataforma Git Hub, aprendi a instalar e vincular o Git com a plataforma web. Além disso, aprendi como faz para enviar repositórios, adicional projetos aos reositórios. #CONTINUAR!!!!#
 
 **Linux:** Pude aprender diversos comandos básicos do Linux e suas funções, como gerenciar arquivos e diretórios, tive contato a informações importantes sobre os editores de texto que foram informações essenciais para a resolução do desafio. 
 
