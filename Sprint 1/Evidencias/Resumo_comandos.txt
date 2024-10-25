@@ -1,0 +1,71 @@
+Principais comandos Linux
+Comando |Função
+cd	|Entra e sai do diretório
+cd arquivos	|Entra no dir chamado arquivo
+cd -	|Volta no dir anterior
+cd	|Volta pro home
+clear	|Limpa
+ls	|Lista diretórios
+ls -l	|Mostra um arqv por linha
+touch |arquivo	Cria arquivo branco chamado arquivo
+echo	|Mostra a palavra escrita no terminal
+echo -n	|Escreve a palavra sem quebra de linha
+echo -e	|Opções de tabulação
+echo -e “col1\col2”	|Mostra colunas ordenadas com espaços
+mkdir nome_diret	|Cria diretórios
+mkdir –p dir1/exerc1	|Cria o dir1 e o exerc1 dentro
+rm nome_arq	|Remove arquivos
+rm –r nome_diretorio	|Remove diretório
+sleep 10	|Conta 10s e aparece a linha de comando
+cat nome_arq	|Aparece o conteúdo do arquivo, resultado do comando
+cat –n nome_arq	 |Enumera as linhas mesmo com linha em branco
+cat –a nome_arq	|Mostra caracteres especiais
+tac nome_arq	|Le de baixo pra cima o conteúdo do arquivo
+tail –n10 nome_arq	|Mostra as ultimas 10 linhas do arquivo
+head –n5 nome_arq	|Mostra as 5 primeiras linhas
+wc –m nome_arq	|Conta os caracteres do arquivo
+wc --help	|Opções de wc
+sort nome_arq	|Ordena o conteúdo do arquivo
+uniq nome_arq	|Mostra o conteúdo repetido uma única vez
+tr a A	|Troca as letras a minusc. em maiúsculas
+tr [: a:] [: A:]	|Troca tbm so muda forma de escrever
+cut –c1-10	|Corta a str do caract. 1 á 10
+cut –c 1,2	|Corta e mostra o caratc 1 e 2
+cut –d “ ”-f1,3	|Corta e mostra o campo 1 e 3, sendo usado o espaço como div. de campo
+diff nome nome2	|Mostra a diferença entre dois arquivos
+grep palavra arquivo_nome	|Procura e retorna a palavra procurada
+sed ‘1,3’ d nome_arq	|Deleta da linha 1 a 3 do arquivo de nome
+sed ‘/palavra/d’ nome_arq	|Deleta sempre que aparecer aquela palavra no arquivo
+sed ‘s/palavra/palavra2/g’ nome	 |Substitui a palavra por palavra2 sempre que aparecer em todo o arquivo
+less nome_arq	|Mostra o script de forpma paginada possível correr por seta. Aperta q p/ sair.
+find ./ -name nome_arq	|Procura no repositório home o arquivo com o nome_arq
+Man find	|Todas opções de find
+Date	|Mostra data
+Date --help	|Todos os formatos de data
+Sec 10	|Gera sequencia de números
+Sec 0 12	|Gera seq do 0 a 12
+Seq 5 2 10	|Começa no 5, vai de 2 em 2 ate o 10
+Expr --help	|Todos os comandos de contas
+	
+	
+	
+
+Execução sequencial de comandos:
+cat alunos.txt | wc –l        		# | faz a junção dos comandos
+Date ; echhoh Linux ; ls 		#; faz a junção
+Entrada e saída
+cat arquivo1 > arquivo2			# > joga a saída do arquivo1 dentro do arquivo2
+date >> arquivo3				#concatena a saída no final do arquivo
+
+Variáveis de ambiente
+env | less		#mostra as variáveis de embiente
+$HOME		#mostra o que tem na var home
+var1=valor		#declara var local
+export var		#para que aver seja vista em outros bash
+HORA=`date +%H`		# executa o comando e armazena o valor da data e hora na var
+HORA=$(date +%H)	#faz a mesma coisa que antes mas de outro formato
+echo $HORA:$MINUTO		# escreve o valor da var HORA : e o valor da var MINUTO
+
+
+
+
