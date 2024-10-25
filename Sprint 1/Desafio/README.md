@@ -10,6 +10,8 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
 
 1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
+![teste](/Sprint%201)
+
 ![Problemas de permissão](/Sprint%201/Evidencias/Problema_permissao.png)
 2. Comecei a criação do executável criando um cabeçalho onde há informações importantes como nome do autor, breve descrição da função do script e como ele será executado.
 
