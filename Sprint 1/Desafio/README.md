@@ -17,7 +17,7 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
 ![Cabeçalho](../Evidencias/Cabeçalho.png)
 
 3. Após isso, dei inícios aos comandos de criação de diretório, subdiretório e realização da cópia do arquivo dados_de_vendas.csv para dentro do diretório, sendo utilizado o código:
-    ...linux
+```linux
     DIRETORIO_VENDAS="/home/rafaela/ecommerce/vendas"
     if [ -d "$DIRETORIO_VENDAS" ]; then
         echo "O diretório vendas já existe"
@@ -36,19 +36,20 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
     ARQUIVOS_DADOS="/home/rafaela/ecommerce/dados_de_vendas.csv"
     cp "$ARQUIVOS_DADOS" "vendas"
     echo "Arquivo dados_de_vendas copiado para o diretório vendas"
-    ...
+```
 Tendo como saída
 ![Criação vendas, backup e cópia de dados_de_vendas](../Evidencias/Criação_dir_subdir_copia.png)
 
 4. Logo após, é realizado a renomeação do arquivo para o formato dados-yyyymmdd. Para isso foi necessário obter a data de execução para adicioná-a ao título a travvéz do comando date.
-    ...linux
+
+```linux
     DATA_EXECUCAO=$(date +"%y%m%d")
-    ...
+```
     
 ![Renome para dados-yyyymmdd](../Evidencias/Renome_dados-yyymmdd.png)
 
 5. É realizado uma nova renomeação para o formato backup-dados-yyyymmdd, sendo que a função mv foi usada para isso.
-    ... linux
+```linux
      BACKUP_DADOS="backup-dados-$DATA_EXECUCAO.csv"
     if [ -f "$SUBDIR_BACKUP/$NOVO_ARQUIVO_BACKUP" ]; then
             mv "$SUBDIR_BACKUP/$NOVO_ARQUIVO_BACKUP" "$SUBDIR_BACKUP/$BACKUP_DADOS"
@@ -56,7 +57,7 @@ Tendo como saída
     else
             echo "Arquivo '$NOVO_ARQUIVO_BACKUP' não encontrado."
     fi 
-    ...
+```
 
     
 ##Script02...[Etapa II](etapa-2)
