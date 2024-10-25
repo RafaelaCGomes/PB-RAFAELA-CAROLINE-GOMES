@@ -4,16 +4,16 @@ O desafio da Sprint 01 teve como objetivo criar um script executável em linux q
 Foi fornecido um arquivo dados_de_vendas.csv, de onde foi extraido os dados para a produção do primeiro relatório, para os demais relatórios, foi alterado manualmente os dados do arquivo dados_de_vendas.csv, gerando assim, diariamente relatórios com informações diferentes.
 
 # Etapas da criação dos scripts executáveis
-Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o intuito de ir corrigindo os erros de sintax e pontuações durante o processo de escrita.
+Em ambos os executáveis, fui escrevendo e testando manualmente cada parte isolada, com o intuito de ir corrigindo os erros de sintax e pontuações durante o processo de escrita.
 
 ##Script01 [Etapa I](etapa-1)
 
 1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
-![Problemas de permissão](/Sprint%201/Evidencias/Problema_permissao.png)
+![Problemas de permissão](../Evidencias/Erro_permissao.jpg)
 2. Comecei a criação do executável criando um cabeçalho onde há informações importantes como nome do autor, breve descrição da função do script e como ele será executado.
 
-![Cabeçalho](./Evidencias/Cabeçalho.png)
+![Cabeçalho](../Evidencias/Cabecalho.jpg)
 
 3. Após isso, dei inícios aos comandos de criação de diretório, subdiretório e realização da cópia do arquivo dados_de_vendas.csv para dentro do diretório, sendo utilizado o código:
 ```linux
@@ -37,15 +37,15 @@ Em ambos os executáveis, fui escrevendo e testando cada parte isolada, com o in
     echo "Arquivo dados_de_vendas copiado para o diretório vendas"
 ```
 Tendo como saída
-![Criação vendas, backup e cópia de dados_de_vendas](./Evidencias/Criação_dir_subdir_copia.png)
+![Criação vendas, backup e cópia de dados_de_vendas](../Evidencias/Criacao_dir_subdir_copia_dados.jpg)
 
-4. Logo após, é realizado a renomeação do arquivo para o formato dados-yyyymmdd. Para isso foi necessário obter a data de execução para adicioná-a ao título a travvéz do comando date.
+4. Logo após, é realizado a cópia do arquivo dados_de_vendas para apasta backup e a renomeação do arquivo para o formato dados-yyyymmdd. Para isso foi necessário obter a data de execução para adicioná-a ao título a travéz do comando date.
 
 ```linux
     DATA_EXECUCAO=$(date +"%y%m%d")
 ```
     
-![Renome para dados-yyyymmdd](./Evidencias/Renome_dados-yyymmdd.png)
+![Renome para dados-yyyymmdd](../Evidencias/Copia_para_backup.jpg)
 
 5. É realizado uma nova renomeação para o formato backup-dados-yyyymmdd, sendo que a função mv foi usada para isso.
 ```linux
@@ -57,8 +57,10 @@ Tendo como saída
             echo "Arquivo '$NOVO_ARQUIVO_BACKUP' não encontrado."
     fi 
 ```
-
+![Renomeação para backup-dados-yyyymmdd](../Evidencias/Renomeando_backup-dados-yyyymmdd.jpg)
     
+6. 
+
 ##Script02 [Etapa II](etapa-2)
 
 2. ... 
