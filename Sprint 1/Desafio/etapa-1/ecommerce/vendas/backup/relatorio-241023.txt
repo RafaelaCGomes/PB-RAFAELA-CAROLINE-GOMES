@@ -1,0 +1,20 @@
+Data do sistema: '241023 15:27'. 
+
+Data do primeiro registro: 'data
+01/02/2024'.
+
+Data do último registro: '24/03/2024'.
+
+Quantidade de itens diferentes: '51'.
+
+As dez primeiras linhas do arquivo são:
+'1,lapis,4,4.00,01/02/2024
+2,caneta,5,20.00,01/02/2024
+3,mochila,2,150.00,02/02/2024
+4,tesoura,6,36.00,03/02/2024
+5,borracha,1,2.50,04/02/2024
+6,lapis,7,17.50,05/02/2024
+7,corretivo,9,27.00,06/02/2024
+8,compasso,9,81.00,07/02/2024
+9,compasso,12,108.00,07/02/2024
+10,marca texto,2,14.00,08/02/2024'

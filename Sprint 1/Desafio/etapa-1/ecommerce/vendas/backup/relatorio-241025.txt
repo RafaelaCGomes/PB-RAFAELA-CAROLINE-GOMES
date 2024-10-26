@@ -1,0 +1,20 @@
+Data do sistema: '241025 15:27'. 
+
+Data do primeiro registro: 'data
+28/05/2024'.
+
+Data do último registro: '04/08/2024'.
+
+Quantidade de itens diferentes: '59'.
+
+As dez primeiras linhas do arquivo são:
+'11,cimento,1,10.00,28/05/2024
+12,areia,2,90.00,29/05/2024 
+13,brita,8,500.00,30/05/2024
+14,tijolo,100,6000.00,31/05/2024
+15,bloco de concreto,6,140.60,01/06/2024
+16,cal,2,60.22,02/06/2024
+17,argamassa,8,65.00,03/06/2024
+18,pincel,4,8.00,04/06/2024
+19,rejunte,5,400.00,05/06/2024
+20,tinta acrílica,2,600.00,06/06/2024'
