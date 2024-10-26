@@ -6,7 +6,7 @@ Foi fornecido um arquivo dados_de_vendas.csv, de onde foi extraido os dados para
 # Etapas da criação dos scripts executáveis
 Em ambos os executáveis, fui escrevendo e testando manualmente cada parte isolada, com o intuito de ir corrigindo os erros de sintax e pontuações durante o processo de escrita.
 
-##Script01...[Etapa I](etapa-1)
+## Script01...[Etapa I](etapa-1)
 
 1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
@@ -66,7 +66,7 @@ Tendo como saída
 
 
 
-##Script02...[Etapa II](etapa-2)
+## Script02...[Etapa II](etapa-2)
 
 2. ... 
 
