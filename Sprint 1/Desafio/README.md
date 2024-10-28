@@ -176,6 +176,5 @@ echo "Arquivos relatorios unidos em '$RELAT'."
 ```
 ![Adicionando dados ao relatorio final](../Evidencias/Script2_dados_relatorio.jpg)
 
-Tendo então a criação do relatório final.
-
-📑[Relatório final](/Sprint%201/Desafio/Etapa-2/relatorio_final.txt)
+Tendo então a criação do 
+[Relatorio final](/Sprint%201/Desafio/Etapa-2/relatorio_final.txt)
