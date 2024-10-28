@@ -2,14 +2,32 @@
 Nessa Sprint, foi dado como objetivo desenvolver scripts executáveis em linux e instalar e configurar o Git e GitHub. 
 Os executáveis tinham como objetivo: 
 
-    1° Script: Criar diretório, subdiretório, copiar o arquivo dados_de_vendas para dentro do diretório vendas, após, renomea-lo e extrair informações desse arquivo para gerar relatórios diários. 
+     1° Script: Criar diretório, subdiretório, copiar o arquivo dados_de_vendas para dentro do diretório vendas, após, renomea-lo e extrair informações desse arquivo para gerar relatórios diários. 
 
     2° Script: Concatenar os relatórios gerados em um único relatório final.
 Além disso, criar a conta e configurar o Git e GitHub.
 
 Para isso, foi fornecido dois cursos onde ajudou a entender comandos básicos da linguagem linux e como configurar o GitHub. 
 
-**Resumo do curso de Git Hub:** No curso de GitHub, aprendi a criar minha conta na plataforma Git Hub, aprendi a instalar e vincular o Git com a plataforma web. Além disso, aprendi como faz para enviar repositórios, adicional projetos aos reositórios. #CONTINUAR!!!!#
+**Resumo do curso de Git Hub:** No curso de GitHub, aprendi a criar minha conta na plataforma Git Hub, aprendi a instalar e vincular o Git com a plataforma web. Além disso, aprendi como faz para enviar repositórios e adicional projetos aos reositórios. 
+
+Além disso, aprendi comandos que servem para atualizar, salvar e enviar atualizações da maquina para o repositório como:
+
+---
+git status | Verifica atualizações.
+
+git add | Adiciona arquivos a um projeto.
+
+git commit -a -m "mensagem" | Salva todas as alterações realizadas no projeto e envia uma mensagem descrevendo qual foi a alteração.
+
+git push | Envia as mudanças para o repositório remoto.
+
+git pull | Sincroniza o local com as mudanças remotas.
+
+---
+Aprendi também sobre Markdown, que é uma forma de adicionar estilo a textos web, como por exempo no arquivo README.md, para dar uma melhor aparencia ao texto.
+
+Com o markdown pude criar listas, diferenciar escrita de cabeçalho, inserir links de imagens, linkas de outras pastas e pedaços de códigos.
 
 **Resumo do curso de Linux:** Pude aprender diversos comandos básicos do Linux e suas funções, como gerenciar arquivos e diretórios, tive contato a informações importantes sobre os editores de texto que foram informações essenciais para a resolução do desafio. 
 
@@ -43,4 +61,5 @@ Porém, realizei novamente a execução programada do script a cada 5 minutos, a
 
 
 # Certificados
+Os certificados recebidos foram do curso de Linux, Git e Github.
 

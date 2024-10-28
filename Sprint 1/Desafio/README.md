@@ -1,12 +1,16 @@
 # Resumo e Objetivo
-O desafio da Sprint 01 teve como objetivo criar um script executável em linux que criasse um relatório final, unindo relatórios que foram gerados por outro script executável, esse por sua vez, foi programado e rodou por quatro dias seguidos, gerando relatórios diários.
+O desafio da Sprint 01 teve como objetivo criar um script executável em linux que gerasse um relatório final, unindo relatórios que foram gerados por outro script executável, esse por sua vez, foi programado e rodou por quatro dias seguidos, criando relatórios diários.
 
 Foi fornecido um arquivo dados_de_vendas.csv, de onde foi extraido os dados para a produção do primeiro relatório, para os demais relatórios, foi alterado manualmente os dados do arquivo dados_de_vendas.csv, gerando assim, diariamente relatórios com informações diferentes.
 
 # Etapas da criação dos scripts executáveis
 Em ambos os executáveis, fui escrevendo e testando manualmente cada parte isolada, com o intuito de ir corrigindo os erros de sintax e pontuações durante o processo de escrita.
 
-## Script01...[Etapa I](etapa-1)
+O primeiro script, [Etapa I](../Desafio/Etapa-1) ficou responsável por criar diretórios, subdiretórios, renomear o arquivo e criar os relatórios diários.
+
+Já o segundo script, [Etapa II](../Desafio/Etapa-2) ficou responsável por unir os relatórios diários em um único relatório final.
+
+## Script01... [Etapa I](../Desafio/Etapa-1)
 
 1. Ao criar o arquivo Processamento_de_vendas.sh, não estava conseguindo editá-lo, ao mudar as configurações de permissão o probelma foi resolvido. 
 
@@ -91,6 +95,7 @@ echo "'$DEZ_PRIMEIRAS_LINHAS'"
 } > "$SUBDIR_BACKUP/$RELATORIO_TXT"
 ```
 8. Após a criação do relatório, foi solicitado a compactação do arquivo backup-dados-yyyymmdd em zip. Nesse momento, tive problemas com o Linux.
+
 ![Problema zip](../Evidencias/Erro_zip.jpg)
  Precisando realizar os seguintes comandos para resolver.
 ```
@@ -145,16 +150,32 @@ Executei novamente o script por 4 vezes  consecutivas a cada 5 minutos, tendo to
 ![Novos relatorios](../Evidencias/Novos_relatorios/Execucao_novos.jpg)
 
 
-## Script02...[Etapa II](etapa-2)
+## Script02... [Etapa II](../Desafio/Etapa-2)
 
-
-
-Já com esse código, o objetivo é ...
-
+Comecei pensando em criar o relatório final na pasta ecommerce com a seguinte linha de código.
 ```
-Esta é uma outra linha de código
+RELAT="relat_final.txt"
+touch "$RELAT"
+if [ -f "/home/rafaela/repo1/relat_final.txt" ]; then
+        echo "Relatório criado"
+else
+        echo "Relatório não criado"
+fi
 ```
-    
+![Criação do relatório final](../Evidencias/Script2_criacao_relatorio.jpg)
 
+Em seguida, realizei uma busca no diretório backup, para encontrar todos os arquivos do tipo .txt, copiando assim seu conteudo para dentro do relatório final, sempre abaixo do relatório anteriormente adicionado.
 
+Para isso, usei o seguinte loop.
+```
+for relatorio in "$SUBDIR"/*.txt ; do
+        cat "$relatorio" >> "$RELAT"
+done
 
+echo "Arquivos relatorios unidos em '$RELAT'."
+```
+![Adicionando dados ao relatorio final](../Evidencias/Script2_dados_relatorio.jpg)
+
+Tendo então a criação do relatório final.
+
+📑[Relatório final](../Desafio/Etapa-2/relatorio_final.txt/)
