@@ -178,4 +178,4 @@ echo "Arquivos relatorios unidos em '$RELAT'."
 
 Tendo então a criação do relatório final.
 
-📑[Relatório final](../Desafio/Etapa-2/relatorio_final.txt/)
+📑[Relatório final](/Sprint%201/Desafio/Etapa-2/relatorio_final.txt)
