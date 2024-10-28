@@ -152,7 +152,7 @@ Executei novamente o script por 4 vezes  consecutivas a cada 5 minutos, tendo to
 
 ## Script02... [Etapa II](../Desafio/Etapa-2)
 
-Comecei pensando em criar o relatório final na pasta ecommerce com a seguinte linha de código.
+1. Comecei pensando em criar o relatório final na pasta ecommerce com a seguinte linha de código.
 ```
 RELAT="relat_final.txt"
 touch "$RELAT"
@@ -164,7 +164,7 @@ fi
 ```
 ![Criação do relatório final](../Evidencias/Script2_criacao_relatorio.jpg)
 
-Em seguida, realizei uma busca no diretório backup, para encontrar todos os arquivos do tipo .txt, copiando assim seu conteudo para dentro do relatório final, sempre abaixo do relatório anteriormente adicionado. Criando então o relatório final.
+2. Em seguida, realizei uma busca no diretório backup, para encontrar todos os arquivos do tipo .txt, copiando assim seu conteudo para dentro do relatório final, sempre abaixo do relatório anteriormente adicionado. Criando então o relatório final.
 
 Para isso, usei o seguinte loop.
 ```
