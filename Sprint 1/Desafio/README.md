@@ -164,7 +164,7 @@ fi
 ```
 ![Criação do relatório final](../Evidencias/Script2_criacao_relatorio.jpg)
 
-Em seguida, realizei uma busca no diretório backup, para encontrar todos os arquivos do tipo .txt, copiando assim seu conteudo para dentro do relatório final, sempre abaixo do relatório anteriormente adicionado.
+Em seguida, realizei uma busca no diretório backup, para encontrar todos os arquivos do tipo .txt, copiando assim seu conteudo para dentro do relatório final, sempre abaixo do relatório anteriormente adicionado. Criando então o relatório final.
 
 Para isso, usei o seguinte loop.
 ```
@@ -176,5 +176,3 @@ echo "Arquivos relatorios unidos em '$RELAT'."
 ```
 ![Adicionando dados ao relatorio final](../Evidencias/Script2_dados_relatorio.jpg)
 
-Tendo então a criação do 
-[Relatorio final](/Sprint%201/Desafio/Etapa-2/relatorio_final.txt)
