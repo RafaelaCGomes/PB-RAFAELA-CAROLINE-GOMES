@@ -140,7 +140,7 @@ Tendo como saída:
 👉Quarto dia:
 ![Quarto dia](../Evidencias/Quarto_dia_execucao.jpg)
 
-❗Após a execução do dia terceiro dia  (24/10/24), ao conversar com meus colegas percebi que ao mudar manualmente os dados, não mudei os id de cada produto, sendo assim, alterei manualmente antes da execução do dia 25/10/24.
+❗Após a execução do terceiro dia (24/10/24), ao conversar com meus colegas, percebi que quando mudei manualmente os dados, não alterei os id de cada produto, sendo assim, alterei manualmente antes da execução do dia 25/10/24.
 
 Executei novamente o script por 4 vezes  consecutivas a cada 5 minutos, tendo todo o conteúdo do arquivo dados_de_vendas alterados completamente, gerando assim novos relatórios e um novo relatório final, assim como consta na pasta
 📂 [Novos_relatórios](/Sprint%201/Evidencias/Novos_relatorios).
