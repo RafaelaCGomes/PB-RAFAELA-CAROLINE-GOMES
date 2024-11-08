@@ -39,18 +39,18 @@ CREATE TABLE dim_carro (
 --Fato locacao
 CREATE TABLE ft_locacao (
 	idLocacao INT NOT NULL PRIMARY KEY,
-	idCliente INT,
-	idVendedor INT,
-	idCarro INT,
+	idCliente INT NOT NULL,
+	idVendedor INT NOT NULL,
+	idCarro INT NOT NULL,
 	dataLocacao DATE,
 	horaLocacao TIME,
 	qtdDiaria INT,
 	vlrDiaria DECIMAL (5,2),
 	dataEntrega DATE,
 	horaEntrega TIME,
-	FOREIGN KEY (idCliente) REFERENCES Cliente(idCliente),
-	FOREIGN KEY (idVendedor) REFERENCES Vendedor(idVendedor),
-	FOREIGN KEY (idCarro) REFERENCES Carro(idCarro)
+	FOREIGN KEY (idCliente) REFERENCES dim_cliente(id),
+	FOREIGN KEY (idVendedor) REFERENCES dim_vendedor(id),
+	FOREIGN KEY (idCarro) REFERENCES dim_carro(id)
 );
 
 --Dados na tabela dim_vendedor.
@@ -84,29 +84,8 @@ FROM Locacao ;
 
 
 
-
-
 --Conculta dimensionamento.
 SELECT * FROM dim_vendedor;
 SELECT * FROM dim_cliente;
 SELECT * FROM dim_carro;
 SELECT * FROM ft_locacao;
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
