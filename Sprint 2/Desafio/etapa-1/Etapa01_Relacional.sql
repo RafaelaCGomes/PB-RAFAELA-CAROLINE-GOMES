@@ -7,7 +7,7 @@ CREATE TABLE Vendedor(
 );
 --Criação da tabela cliente.
 CREATE TABLE Cliente (
-	idCliente INT PRIMARY KEY,
+	idCliente INT NOT NULL PRIMARY KEY,
 	nomeCliente VARCHAR (100),
 	cidadeCliente VARCHAR (100),
 	estadoCliente VARCHAR (100),
@@ -16,13 +16,13 @@ CREATE TABLE Cliente (
 
 --Criação da tabela combustivel.
 CREATE TABLE Combustivel (
-	idCombustivel INT PRIMARY KEY,
+	idCombustivel INT NOT NULL PRIMARY KEY,
 	tipoCombustivel INT
 );
 
 --Criação da tabela carro.
 CREATE TABLE Carro (
-	idCarro INT PRIMARY KEY,
+	idCarro INT NOT NULL PRIMARY KEY,
 	kmCarro INT,
 	classiCarro VARCHAR (100),
 	marcaCarro VARCHAR (100),
@@ -38,7 +38,7 @@ ALTER TABLE tb_locacao RENAME TO Antiga_tb_locacao;
 
 --Criação da tabela locacao.
 CREATE TABLE Locacao (
-	idLocacao INT PRIMARY KEY,
+	idLocacao INT NOT NULL PRIMARY KEY,
 	dataLocacao DATE,
 	horaLocacao TIME,
 	qtdDiaria INT,
@@ -98,6 +98,7 @@ FROM Antiga_tb_locacao ;
 
 SELECT *
 FROM Locacao l ;
+
 
 --Formatação da coluna horaLocacao.
 UPDATE Locacao 
