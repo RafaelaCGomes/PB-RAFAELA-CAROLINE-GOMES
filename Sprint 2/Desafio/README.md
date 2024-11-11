@@ -93,6 +93,6 @@ Como os dados ja estavam tratados e a formatação feita, achei mais fácil real
 ![dim_carro](../Evidencias/dim_carro.jpg)
 
 Tendo então como resultado o desenho dimencional a seguir.
-![Desenho_dimensional](../Evidencias/Modelagem_dimencional.jpg)
+![Desenho_dimensional](../Evidencias/Modelagem_dimensional.jpg)
 
 
