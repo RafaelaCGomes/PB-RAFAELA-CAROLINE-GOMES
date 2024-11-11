@@ -104,11 +104,11 @@ FROM Locacao l ;
 UPDATE Locacao 
 SET horaLocacao = printf('%02d:%s', CAST(substr(horaLocacao , 1, instr(horaLocacao , ':') - 1) AS INTEGER), substr(horaLocacao , instr(horaLocacao , ':') + 1));
 
---Formatação da coluna dataLocação para YYYY/MM/DD.
+--Formatação da coluna dataLocação para YYYY-MM-DD.
 UPDATE Locacao 
 SET dataLocacao = substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao , 7, 2);
 
---Formatação da coluna dataEntrega para YYYY/MM/DD.
+--Formatação da coluna dataEntrega para YYYY-MM-DD.
 UPDATE Locacao 
 SET dataEntrega = substr(dataEntrega , 1, 4) || '-' || substr(dataEntrega , 5, 2) || '-' || substr(dataEntrega , 7, 2);
 
