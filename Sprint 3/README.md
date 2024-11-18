@@ -15,6 +15,14 @@ Por exemplo, no exercício  [Ex09_parte2](../Sprint%203/Exercícios/Ex09_parte2.
 ![Ex09](../Sprint%203/Evidencias/Ex09_Parte2.jpg)
 
 
+No Ex11_parte2, realizei o teste em minha máquina, colocando o caminho absoluto do arquivo, só para ter certeza que estava funcionando corretamente.
+![Ex11](../Sprint%203/Evidencias/Ex11_parte2.jpg)
+
+O mesmo realizei com o exercício 13.
+![Ex13](../Sprint%203/Evidencias/Ex13_parte2.jpg)
+
+
+
 
 
 # Certificados
