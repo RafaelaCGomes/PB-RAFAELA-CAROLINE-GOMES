@@ -1,7 +1,7 @@
 # Resumo da Sprint 1
 
 
-**Resumo do curso de Git Hub:**
+**Resumo do curso de Python:**
 
 
 
