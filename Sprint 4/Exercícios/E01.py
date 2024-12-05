@@ -7,7 +7,6 @@ Seu código deverá exibir na saída (simplesmente utilizando 2 comandos `print(
 a lista dos 5 maiores números pares em ordem decrescente;
 a soma destes valores."""
 
-number_txt = 'C:/Users/User/Desktop/Compass.uol/Sprint04/Exercícios/number.txt'
 
 with open ('number_txt', mode='r') as number_txt: #abre o arquivo
     numeros = map(int ,number_txt.readlines())

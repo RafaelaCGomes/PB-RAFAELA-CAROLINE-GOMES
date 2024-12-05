@@ -20,8 +20,6 @@ Em seu desenvolvimento você deverá utilizar lambdas e as seguintes funções:
 •	map
 •	sorted'''
 
-arquivo_csv = 'C:/Users/User/Desktop/Compass.uol/Sprint04/Exercícios/estudantes.csv'
-
 #função para gerar o relatorio com os dados formatados.
 def gerador_relatorio(nomearquivo):
     with open(nomearquivo, mode='r') as arquivo: #abrir o arquivo.
@@ -53,4 +51,4 @@ def gerador_relatorio(nomearquivo):
     print("\n".join(resultado))
 
 
-gerador_relatorio(arquivo_csv)
+gerador_relatorio('estudantes.csv')
