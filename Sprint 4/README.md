@@ -1,14 +1,11 @@
 # Resumo da Sprint 4
-Na sprint 04 foi disponibilizado um curso de Docker, que ajudou muito a entender os comandos básicos, o que é e como funciona o docker. Por ser a primeira vez que tice contato com ele, achei o curso bem útil para a resolução do exercício.
+Na sprint 04 foi disponibilizado um curso de Docker, que ajudou muito a entender os comandos básicos, o que é e como funciona o docker. Por ser a primeira vez que tive contato com ele, achei o curso bem útil para a resolução do exercício.
 
-Além do curso, foi fornecido um texto sobre programação funcional. 
-**Curso de Python:**
+Além do curso, foi fornecido um texto sobre programação funcional, da Alura, que ajudou a relembrar um pouco o que é programação funcional, de onde veio e alguns conceitos como o que sãp funções puras.
 
+No curso AWS Partner: Accreditation (Technical), pode aprender como funciona a estrutura da AWS, além de como utilizar os serviços prestados. Juntamente com esse curso, fiz o curso AWS Technical Essentials.
 
-**Curso Aspectos econômicos na nuvem (AWS):**
-
-
-
+No curso Technical Essentials, puder ver demonstrações do funcionamento, de criação de bucket, como criar grupos e adicionar usuários. Além disso, vi os conceitos fundamentais da AWS em relação a banco de dados, segurança e armazenamento.
 
 # Exercícios
 📑[Resolução do exercício01](../Sprint%204/Exercícios/E01.py)
