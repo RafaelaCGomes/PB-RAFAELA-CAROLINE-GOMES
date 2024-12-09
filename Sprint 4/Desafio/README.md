@@ -12,7 +12,7 @@ Na etapa 02 do desafio, como é uma resposta exata de como resolver, não fiz um
 
 Na etapa 01, recebi um arquivo chamado carguru.py, onde precisei  criar uma imagem e rodar um containeer.
 
-Para criar a imagem, criei um  dockerfile com as ...
+Para criar a imagem, criei um  dockerfile com as instruções necessárias para conter na imagem.
 
 ![Dockerfile_etapa01](../Evidencias/Dockerfile_Etapa01.jpg)
 
@@ -23,11 +23,29 @@ docker build
 ```
 ![Criação_imagem_etapa01](../Evidencias/Criacao_img_etapa01.jpg)
 
-
+Após criar a imagem, rodei um containeer através da imagem.
+![Container_etapa01](../Evidencias/Rodando_img_etapa01.jpg)
 
 ## Etapa02:
+Na etapa 02, foi necessário respoder a seguinte pergunta:
+
+É possível reutilizar containers? 
+
+Com reiniciar, entendi que após criar um conteiner e parar a execução dele, se é possível fazer com que ele rode novamente, sem a necessidade de criar um novo conainer. De acordo com o que vi no curso e entendi, é possível sim. 
+
+Para rodar um container que ja foi criado, é necessário usar o comando:
+```
+docker start nome_containeer
+
+```
+Para exemplificar, fiz o comando em um containeer que criei a partir de uma imagem do Ubuntu.
+
+![reiniciando_container](../Evidencias/Comando_etapa02.jpg)
 
 ## Etapa03:
+Para a etapa 03, precisei criar um script.py com um algoritmo que recebe uma string via input, gera um hash e imprime esse hash de forma hexadecimal.
+
+![algoritmo](../Evidencias/Script_etapa03.jpg)
 
 
 

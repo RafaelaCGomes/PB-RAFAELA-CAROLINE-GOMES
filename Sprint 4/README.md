@@ -33,5 +33,9 @@ No [Exercício_05](../Sprint%204/Exercícios/E05.py), tive dificuldade em conseg
 
 
 # Certificados
-Após a conclusão do curso da AWS:, recebi o 
+Após a conclusão do curso da AWS Partner: Accreditation, recebi os certificados:
+
+[Certificado_Credenciamento](../Sprint%204/Certificados/Rafaela_C_Gomes_Credenciamento.pdf)
+
+[Certificado_Technical_Essentials](../Sprint%204/Certificados/Rafaela_C_Gomes_Credenciamento.pdf)
 
