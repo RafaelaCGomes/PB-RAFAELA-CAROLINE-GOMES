@@ -47,6 +47,22 @@ Para a etapa 03, precisei criar um script.py com um algoritmo que recebe uma str
 
 ![algoritmo](../Evidencias/Script_etapa03.jpg)
 
+Após, criei o arquivo dockerfile, que contém as instruções para criar a imagem da etapa 03.
+
+![imagem_etapa_03](../Evidencias/Dockerfile_etapa03.jpg)
+
+Em seguida, criei a imagem usando o comando:
+
+````
+docker build
+````
+
+![criando_imagem](../Evidencias/Criacao_img_etapa03.jpg)
+
+Por fim, criei e rodei um container a partir da imagem criada.
+
+![container_etapa03](../Evidencias/Containeer_etapa03.jpg)
+
 
 
 
