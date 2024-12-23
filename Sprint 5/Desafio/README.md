@@ -1,71 +1,72 @@
 # Resumo e Objetivo
 
-Para o desafio da sprint, recebi um arquivo chamado carguru.py para ser usado na etapa01. Para a conclusão de todas as etapas do desafio, precisei entender e praticar conceitos do docker, como criar imagens, containeers, entre outros comandos. 
+Para o desafio da sprint, precisei selecionar um dataset do portal de dados públicos do Governo Brasileiro.
+
+Após analisar, escolhi o ..... [csv]
+
+Realizei o tratamento de dados do dataset original, realizar as manipulações necessárias e enviar para o bucket, tive como entregáveis:
+
+Arquivo [ tratamento dados .py] e [arquivo manipulações . py].
+Arquivo [csv tratado] e arquivo [csv manipulado].
+Para o upload dos arquivos para a AWS, realizei um [Script criação buscket e envio do csv original] e [script envio dos demais csv] 
+
+
 
 # Etapas
+Para uma melhor organização da resolução do exercício, dividirei o desafio em etapas.
 
-Esse desafio ele foi dividido em 03 etapas, onde cada etapa possui um entregável distinto.
+## Etapa01: Criação do bucket e envio do dataset original.
 
-Na etapa 02 do desafio, como é uma resposta exata de como resolver, não fiz uma pasta em Desafio, deixei somente a resposta no readme.
+Na primeira etapa, realizei a criação do bucket por meio de um [script_python], usando a biblioteca boto3.
 
-## Etapa01: 
+![script_bucket_aws01]
 
-Na etapa 01, recebi um arquivo chamado carguru.py, onde precisei  criar uma imagem e rodar um containeer.
+![script_bucket_aws02]
 
-Para criar a imagem, criei um  dockerfile com as instruções necessárias para conter na imagem.
+![No_bucket_aws]
 
-![Dockerfile_etapa01](../Evidencias/Dockerfile_Etapa01.jpg)
+## Etapa02: Tratamento e manipulação dos dados.
 
+Após, realizei a análise dos dados selecionados, como vi que não tinha dados nulos e inconsistências, realizei somente a conversão do tipo dos dados de algumas colunas para numérico.
 
-Para a criação da imagem, usei o comando.
-```
-docker build 
-```
-![Criação_imagem_etapa01](../Evidencias/Criacao_img_etapa01.jpg)
+Em seguida, salvei em um novo arquivo.csv.
 
-Após criar a imagem, rodei um containeer através da imagem.
-![Container_etapa01](../Evidencias/Rodando_img_etapa01.jpg)
+![script_]
 
-## Etapa02:
-Na etapa 02, foi necessário respoder a seguinte pergunta:
+![]
 
-É possível reutilizar containers? 
+Com o dataframe novo tratado, realizei as manipulações estipuladas no enunciado do desafio.
 
-Com reiniciar, entendi que após criar um conteiner e parar a execução dele, se é possível fazer com que ele rode novamente, sem a necessidade de criar um novo conainer. De acordo com o que vi no curso e entendi, é possível sim. 
+Para isso, criei um novo script python, onde eu conseguisse responder a questão:
 
-Para rodar um container que ja foi criado, é necessário usar o comando:
-```
-docker start nome_containeer
+- 
 
-```
-Para exemplificar, fiz o comando em um containeer que criei a partir de uma imagem do Ubuntu.
+Para as manipulações:
 
-![reiniciando_container](../Evidencias/Comando_etapa02.jpg)
+1. Comecei
 
-## Etapa03:
-Para a etapa 03, precisei criar um script.py com um algoritmo que recebe uma string via input, gera um hash e imprime esse hash de forma hexadecimal.
+2. 
 
-![algoritmo](../Evidencias/Script_etapa03.jpg)
+3. 
 
-Após, criei o arquivo dockerfile, que contém as instruções para criar a imagem da etapa 03.
+4. 
 
-![imagem_etapa_03](../Evidencias/Dockerfile_etapa03.jpg)
+5. 
 
-Em seguida, criei a imagem usando o comando:
+6. 
 
-````
-docker build
-````
-
-![criando_imagem](../Evidencias/Criacao_img_etapa03.jpg)
-
-Por fim, criei e rodei um container a partir da imagem criada.
-
-![container_etapa03](../Evidencias/Containeer_etapa03.jpg)
+Como resultado final das manipulação, tive como saida um novo dataframe [arquivo.csv] e um arquivo [arquivo.txt] com a pergunta e a resposta.
 
 
+## Etapa03: Envio dos dataframe tratado e manipulado.
 
+Por fim, após todo o processo de tratamento e manipulações, resultando em uma unica resposta, enviei os dataframes para o bucket criado anteriormente.
 
+Para isso, criei um novo script python onde usei novamente a biblioteca boto3 para enviar os arquivos na nuvem.
+
+[script_aws_2]
+
+![]
 
 
 
