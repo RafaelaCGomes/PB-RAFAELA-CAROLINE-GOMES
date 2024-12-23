@@ -18,6 +18,8 @@ Após a conclusão do exercício, o site hospedado pode ser acessado pelo [Endpo
 
 # Evidências
 
+Para ficar de fácil entendimento os passos realizados, achei interessante dividir a realização do exercício em etapas.
+
 ## Etapas da resolução do exercício.
 
 ## Etapa 1:
