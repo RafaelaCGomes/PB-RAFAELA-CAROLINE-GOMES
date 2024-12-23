@@ -1,0 +1,2 @@
+Pergunta: Qual o município do estado de SP, em qual mes que esse município teve o maior estoque de camarão rosa em toneladas, além disso, qual foi a media de estoque do mesmo camarão em kg e como o estoque e classificado (Alto > 5t e Baixo <5t) ? 
+ Resposta: O município com maior estoque de Camarão rosa foi (Guarujá - SP ), no mês (1.0) teve estoque com (182.643) toneladas, a média do mês de estoque é (7305.72) e é considerado como categoria de (Alto estoque)
