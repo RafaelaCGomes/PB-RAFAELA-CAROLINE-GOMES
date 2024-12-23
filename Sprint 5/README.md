@@ -1,41 +1,79 @@
-# Resumo da Sprint 4
-Na sprint 04 foi disponibilizado um curso de Docker, que ajudou muito a entender os comandos básicos, o que é e como funciona o docker. Por ser a primeira vez que tive contato com ele, achei o curso bem útil para a resolução do exercício.
+# Resumo da Sprint 5
 
-Além do curso, foi fornecido um texto sobre programação funcional, da Alura, que ajudou a relembrar um pouco o que é programação funcional, de onde veio e alguns conceitos como o que sãp funções puras.
+Na sprint 05 foi disponibilizado o jogo Cloud Quest, durante a realização do jogo pude aprender e ver como é a plataforma da AWS, realizar algumas operações, como criar um instância EC2, além de configurar grupos de segurança e criação de banco de dados na nuvem.
 
-No curso AWS Partner: Accreditation (Technical), pode aprender como funciona a estrutura da AWS, além de como utilizar os serviços prestados. Juntamente com esse curso, fiz o curso AWS Technical Essentials.
-
-No curso Technical Essentials, puder ver demonstrações do funcionamento, de criação de bucket, como criar grupos e adicionar usuários. Além disso, vi os conceitos fundamentais da AWS em relação a banco de dados, segurança e armazenamento.
+Além disso, foi disponibilizado o Curso-padrão de preparação para o exame: AWS Certified Cloud Practitioner, nele  pude rever conceitos ja falados em outros cursos, além de   ver algumas questões e ter uma ideia de como são as questões da prova de certificação da AWS, sendo muito útil para a preparação para a certificação.
 
 # Exercícios
-📑[Resolução do exercício01](../Sprint%204/Exercícios/E01.py)
+No exercício de Laboratório AWS S3, pude aprender como criar um bucket S3 e realizar configurações para que funcione como hospedagem de conteúdo estático.
 
-📑[Resolução do exercício02](../Sprint%204/Exercícios/E02.py)
+Iniciei o exercício baixando os recursos disponibilizados, sendo: um arquivo [index.htm](../Sprint%205/Exercícios/index.html) e [nomes.csv](../Sprint%205/Exercícios/nomes.csv).
 
-📑[Resolução do exercício03](../Sprint%204/Exercícios/E03.py)
+Durante a resolução do exercício, criei o arquivo [404.html](../Sprint%205/Exercícios/404.html)
 
-📑[Resolução do exercício04](../Sprint%204/Exercícios/E04.py)
+Após a conclusão do exercício, o site hospedado pode ser acessado pelo [Endpoint](../Sprint%205/Exercícios/endpoint.txt)
 
-📑[Resolução do exercício05](../Sprint%204/Exercícios/E05.py)
+🔎 http://labaws-sprint05.s3-website-us-east-1.amazonaws.com
 
-📑[Resolução do exercício06](../Sprint%204/Exercícios/E06.py)
-
-📑[Resolução do exercício07](../Sprint%204/Exercícios/E07.py)
 
 # Evidências
-Na resolução dos exercícios, precisei relembrar como usar algumas funções como  map, lambda, reduce. Para isso, busquei informações na documentação oficial e em outros cursos da plataforma Udemy, que me ajudaram a relembrar a forma de usar essas funções.
 
-Além disso, tive que voltar a treinar e relembrar como é a programação funcional.
+## Etapas da resolução do exercício.
 
-No [Exercício_05](../Sprint%204/Exercícios/E05.py), tive dificuldade em conseguir entender qual era a saída exata que pedia na plataforma, após conversar com colegas, entendi e conseguir resolver colocando uma condição na formatação da saída.
+## Etapa 1:
 
-![Ex05](../Sprint%204/Exercícios/Evidencias_Ex/Ex05_evidencia.jpg)
+Comecei criando o bucket.
+
+![Bucket_criado](../Sprint%205/Exercícios/Evidencias/Bucket_criado.jpg)
+
+## Etapa 2:
+
+Ativei a hospedagem de site estático no bucket criado.
+
+![Hospedagem_site_estatico](../Sprint%205/Exercícios/Evidencias/Hospedagem_site_estático.jpg)
+
+Adicionei os arquivos de indice e de erro ao bucket.
+![index_erro](../Sprint%205/Exercícios/Evidencias/index_erro.jpg)
+
+## Etapa 3:
+
+Atualizei as configurações de acesso público, para que seja possível acessar o site. Deixei desmarcado o bloqueio acesso público.
+
+![bloqueio_acesso_publico](../Sprint%205/Exercícios/Evidencias/Bloqueio_acesso_publico.jpg)
+
+## Etapa 4:
+
+Adicionei uma politica de bucket para conceder acesso de leitura.
+
+![Etapa4_politica_bucket](../Sprint%205/Exercícios/Evidencias/Etapa04_politica_bucket.jpg)
+
+## Etapa 5:
+
+Na etapa 5, criei o documento de índice, nesse caso, chamado index.html
+
+![Etapa5.doc_index](../Sprint%205/Exercícios/Evidencias/Etapa05.doc_index.jpg)
+
+## Etapa 6:
+
+Criei o documento de erro, chamado 404.html
+![Etapa06_doc_erro](../Sprint%205/Exercícios/Evidencias/Etapa06_doc_erro.jpg)
+
+Em seguida, fiz upload do arquivo de índice, de erro e do arquivo csv para o bucket. Criei também uma pasta chamada dados e dentro dela coloquei o arquivo nomes.csv.
+
+![Upload_index_csv_404](../Sprint%205/Exercícios/Evidencias/Upload_index_csv_404.jpg)
+
+![Upload_csv](../Sprint%205/Exercícios/Evidencias/Upload_csv.jpg)
+
+## Etapa 7:
+
+Realizei o teste do endpoint para ver se estava tudo funcionando.
+
+![Teste_endpoint01](../Sprint%205/Exercícios/Evidencias/Teste_endpoint01.jpg)
+
+![Teste_endpoint02](../Sprint%205/Exercícios/Evidencias/Teste_enpoint02.jpg)
 
 
 # Certificados
-Após a conclusão do curso da AWS Partner: Accreditation, recebi os certificados:
+Após a conclusão dos cursos, recebi a [badge](../Sprint%205/Certificados/Badge_CloudQuest_Rafaela_Gomes.txt) do Cloud Queste e o [certificado](../Sprint%205/Certificados/Rafaela_C_Gomes_Curso_padrao_preparacao_exame.pdf) do curso Curso-padrão de preparação para o exame: AWS Certified Cloud Practitioner 
 
-[Certificado_Credenciamento](../Sprint%204/Certificados/Rafaela_C_Gomes_Credenciamento.pdf)
-
-[Certificado_Technical_Essentials](../Sprint%204/Certificados/Rafaela_C_Gomes_Credenciamento.pdf)
-
+![badge](../Sprint%205/Certificados/Badge_CloudQuest_Rafaela_Gomes.jpg)
