@@ -2,7 +2,7 @@
 
 Para o desafio da sprint, precisei selecionar um dataset do portal de dados públicos do Governo Brasileiro.
 
-Após analisar, escolhi o [Declarações_de_Estoque-Camarão_656-Sudest-Sul.csv](../Desafio/Etapa-01/Declarações_de_Estoque-Camarão_656-Sudeste-Sul(Camarao%20656%20sudeste-sul).csv)
+Após analisar, escolhi o [Declarações_de_Estoque-Camarão_656-Sudest-Sul.csv](../Desafio/Etapa-01/Declarações_de_Estoque-Camarão_656-Sudeste-Sul(Camarao%20656%20sudeste-sul).csv), que está disponível no link:  https://dados.gov.br/dados/conjuntos-dados/declaracoes-de-estoque
 
 Realizei o tratamento de dados do dataset original, realizei as manipulações necessárias e enviei para o bucket, tive como entregáveis:
 
