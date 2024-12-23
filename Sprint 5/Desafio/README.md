@@ -67,37 +67,49 @@ Para isso, criei um novo script python [manipulações_df.py](../Desafio/Etapa-0
 
 -  Qual o município do estado de SP, em qual mes que esse município teve o maior estoque de camarão rosa em toneladas, além disso, qual foi a media de estoque do mesmo camarão em kg e como o estoque e classificado (Alto > 5t e Baixo <5t) ? 
 
-
-
 Para as manipulações:
 
-1. Comecei filtrando
+1. Comecei filtrando os dados do dataframe sendo a quantidade de camarão maior que 50kg e o estado sendo == São Paulo
 
-2. dados 
+2. Em seguida, realizei uma função de data, onde extrai o mês da coluna 'Data de envio'.
 
-3. agregação
+3. Fiz o agrupamento por 'Mes de envio' e 'Município', em seguida realizei a média e a soma da quantidade de camarão rosa em kilos. Para isso usei o trechho do código:
+
+```
+df_agrupado = df_filtrado.groupby(['Mes_envio', 'Município'], as_index=False)['Camarão Rosa (Kg)'].agg(Soma_kg_camarao_rosa='sum', Media_kg_camarao_rosa='mean')
+print('Df com soma e média do camarão rosa (kg)')
+print(df_agrupado.head())
+```
+Os itens de 1 à 3 podem ser vistos na evidência do script a seguir.
 
 ![script_manipulação](../Evidencias/script_manipulacoes01.jpg)
 
-4. conversão
+4. Converti a soma do peso do camarão, de kilos para toneladas e criei uma nova coluna chamada 'Soma_tonelada'
 
-5. condicional
+5. Realizei uma função condicional onde criei categorias para a coluna soma_tonelada, sendo que se for maior que 5t, é considerado um estoque Alto, caso contrário, é considerado estoque Baixo.
 
-6. string
+6. Fiz uma função de string, onde adicionei a sigla do estado (SP) ao município.
 
-7. novo filtro
+7. Inplantei um novo filtro para selecional qual o município com maior estoque do estado de São Paulo.
 
-8. salvando manipulações csv
+8. Por fim, salvei o dataframe final após todas as manipulações em csv.
+
+![Df_final](../Evidencias/df_final_manipulado.jpg)
+
+Os itens de 4 à 8 do script podem ser vistos na evidencia abaixo.
 
 ![script_manipulações02](../Evidencias/script_manipulacoes02.jpg)
 
-Como resultado final das manipulação, tive como saida um novo dataframe [arquivo.csv] e um arquivo [arquivo.txt] com a pergunta e a resposta.
+Como resultado final das manipulação, tive como saída um novo dataframe [arquivo.csv] e um arquivo [arquivo.txt] com a pergunta e a resposta.
 
-9. pergunta e resposa
+9. Achei interessante, mesmo após salvar um arquivo em csv, realizar um print e salvar a pergunta juntamente com a resposta após todas as manipulações dos dados.
 
 ![script_manipulações03](../Evidencias/script_manipulacoes03.jpg)
 
-Rodando o scrip de manipulações, tive as saídas no terminal.
+![txt](../Evidencias/txt_perg_resp.jpg)
+
+
+Rodando o script de manipulações, tive as saídas no terminal.
 
 ![saida_01](../Evidencias/manipulacoes01.jpg)
 
@@ -107,15 +119,29 @@ Rodando o scrip de manipulações, tive as saídas no terminal.
 
 ## Etapa03: Envio dos dataframe tratado e manipulado.
 
-Por fim, após todo o processo de tratamento e manipulações, resultando em uma unica resposta, enviei os dataframes para o bucket criado anteriormente.
+Por fim, após todo o processo de tratamento e manipulações, resultando em uma única resposta, enviei os dataframes para o bucket criado anteriormente.
 
 Para isso, criei um novo script python onde usei novamente a biblioteca boto3 para enviar os arquivos na nuvem.
 
-[script_aws_2]
+[aws02_ds_tratado_manipulado](../Desafio/Etapa-03/aws02_ds_tratado_manipulado.py)
 
-![]
+Comecei o script colocando as credenciais para acesso a AWS e criei o usuário S3 com as credenciais.
 
+![Script_aws_02_01](../Evidencias/script_aws_02_01.jpg)
 
+Em seguida, fiz upload do Arquivo [Estoque_camarao_tratado.csv](../Desafio/Etapa-02/Estoque_camarao_tratado.csv) e arquivo [Cidade_com_maior_estoque.csv](../Desafio/Etapa-02/Cidade_com_maior_estoque.csv).
+
+![Script_aws_02_02](../Evidencias/script_aws_02_02.jpg)
+
+Ao rodar o script, tive como saída no terminal:
+
+![envio_csv_bucket](../Evidencias/envio_csv_bucket.jpg)
+
+Para confirmar que tudo ocorreu corretamente, entrei no serviço S3 da AWS e conferi.
+
+![s3_aws](../Evidencias/s3_aws_bucket.jpg)
+
+![s3_aws_csv](../Evidencias/s3_aws_bucket_csv.jpg)
 
 
 
