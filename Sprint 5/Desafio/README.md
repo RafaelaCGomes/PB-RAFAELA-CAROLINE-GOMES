@@ -117,7 +117,7 @@ Rodando o script de manipulações, tive as saídas no terminal.
 
 ![saida_03](../Evidencias/manipulacoes03.jpg)
 
-## Etapa03: Envio dos dataframe tratado e manipulado.
+## [Etapa03:](../Desafio/Etapa-03/) Envio dos dataframe tratado e manipulado.
 
 Por fim, após todo o processo de tratamento e manipulações, resultando em uma única resposta, enviei os dataframes para o bucket criado anteriormente.
 
