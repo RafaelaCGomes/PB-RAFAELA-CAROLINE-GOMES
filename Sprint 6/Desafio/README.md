@@ -4,7 +4,7 @@ O desafio da sprint 06 se tratou de baixar um arquivo zip disponibilizado na pla
 
 Precisei ler os arquivos inteiros, sem realizar a filtragem de dados e carregar esses arquivos para um bucket s3 através de um script python. 
 
-Além disso, precisei criar uma imagem que contenha o scrip.py e os arquivos csv e rodar um container para executar o scrip.
+Além disso, precisei criar uma imagem que contenha o script.py e os arquivos csv e rodar um container para executar o script.
 
 Como entregáveis, achei melhor não colocar os arquivos originais baixados, uma vez que são padrão para todos e pensando no tamanho de cada arquivo.
 
