@@ -5,12 +5,16 @@ Na sprint 06 foi disponibilizado
 # Exercícios
 No exercício de Laboratório AWS S3, pude aprender como criar um bucket S3 e realizar configurações para que funcione como hospedagem de conteúdo estático.
 
+No exercício o AWS Athena, aprendi como criar banco de dados, tabelas e realizar querys de consulta da tabela e banco de dados criado com base em um arquivo csv.
+
+Já no exercício de Lambda, criei uma função e uma camada para conseguir executar essa função.
+
 
 
 
 # Evidências
 
-Para ficar de fácil entendimento, realizarei as evidencias dos exercícios conforme a sequencia fornecida na plataforma Udemy.
+Para ficar de fácil entendimento, realizarei as evidências dos exercícios conforme a sequencia fornecida na plataforma Udemy.
 
 ## Etapas da resolução do exercício.
 
@@ -63,7 +67,7 @@ http://exlabbuckets3.s3-website-us-east-1.amazonaws.com
 
 ## AWS Athena
 
-Etapa 01:
+### Etapa 01:
 
 1. Iniciei a Etapa do exercício da AWS Athena analisando o nome e o tipo de dado de cada coluna do arquivo [nomes.csv](../Sprint%206/Exercícios/Etapa_01_AWS_S3/nomes.csv)
 
@@ -79,67 +83,79 @@ Para isso, criei um notebook para vizualisar essas informações.
 
 ![config_athena](../Sprint%206/Exercícios/Evidencias/config_bicket_athena.jpg)
 
-4.  
+### Etapa 2: 
+
+Criei o banco de dados chamado meubanco.
 
 ![criação_bancodados_athena](../Sprint%206/Exercícios/Evidencias/criacao_banco_dados_athena.jpg)
 
-5. 
+### Etapa 3: 
+
+1. Criei a tabela com as colunas existentes no csv.
+
 ![Criação_tabela_athena](../Sprint%206/Exercícios/Evidencias/criacao_tabela.jpg)
 
-6. 
+2. Realizei uma consulta dos 15 nomes mais usados no ano de 1999. 
+
 ```
 select nome from meubanco.tabela_nomes where ano = 1999 order by total limit 15
 ```
+
 ![Teste_consulta01](../Sprint%206/Exercícios/Evidencias/teste_consulta01.jpg)
 
 ![Teste_Consulta01a](../Sprint%206/Exercícios/Evidencias/teste_consulta01a.jpg)
 
-7. 
+3. Realizei uma nova consulta onde mostra os três nomes mais usados por décadas desde 1950 até 2024.
+
 ![Teste_consulta02a](../Sprint%206/Exercícios/Evidencias/teste_consulta02a.jpg)
 
-Consulta SQL
+Para a consulta SQL, utilizei o seguinte código.
 
-´´´
-with selecao_nomes as (
-    select
-        floor(ano / 10) * 10 as decada,
-        nome,
-        total,
-        row_number() over (
-            partition by floor(ano / 10) * 10
-            order by total desc
-        ) as rank
-    from
-        meubanco.tabela_nomes
-    where
-        ano between 1950 and 2024
-)
-select
-    decada, nome, total
-from
-    selecao_nomes
-where
-    rank <= 3
-order by
-    decada,total desc
 
-´´´
+    with selecao_nomes as (
+        select
+            floor(ano / 10) * 10 as decada,
+            nome,
+            total,
+            row_number() over (
+                partition by floor(ano / 10) * 10
+                order by total desc
+            ) as rank
+        from
+            meubanco.tabela_nomes
+        where
+            ano between 1950 and 2024
+        )
+        select
+            decada, nome, total
+        from
+            selecao_nomes
+        where
+            rank <= 3
+        order by
+            decada,total desc
+
+
+Tendo como resultado:
+
 ![Teste_consulta02b](../Sprint%206/Exercícios/Evidencias/teste_consulta02b.jpg)
 
 ## AWS Lambda
 
+### Etapa 1: 
 
-Etapa 1: Criei uma fução lambada no console da AWS.
+Criei uma fução lambda no console da AWS.
 
 ![criação_função](../Sprint%206/Exercícios/Evidencias/criacao_funcao.jpg)
 
-Etapa 02: Atualizei o código pré escrito na função lambda_function.py, colocando o código a seguir.
+### Etapa 02: 
+
+1. Atualizei o código pré escrito na função lambda_function.py, colocando o código a seguir.
 
 ```
 import json
 import pandas
 import boto3
- 
  
 def lambda_handler(event, context):
     s3_client = boto3.client('s3')
@@ -157,15 +173,14 @@ def lambda_handler(event, context):
 
 ```
 
-
 ![atualização_função](../Sprint%206/Exercícios/Evidencias/atualização_funcao.jpg)
 
-Em seguida, testei a função criada, porém tive um erro.
+2. Em seguida, testei a função criada, porém tive um erro.
 
 ![teste_função](../Sprint%206/Exercícios/Evidencias/teste_funcao.jpg)
 
-
-Etapa 03:
+### Etapa 03:
+Como deu erro ao executar a função, precisei criar uma Layer (camada) que contenha um arquivo zip que importe pandas em sistema linux.
 
 1. Comecei criando uma pasta no sistema e um arquivo Dockerfile.
 
@@ -179,38 +194,66 @@ Etapa 03:
 
 ![rodando_imagem](../Sprint%206/Exercícios/Evidencias/docker_03.jpg)
 
-4. 
-![]()
+4. Criei diretórios dentro do container que receberá as bibliotecas necessárias.
 
-5. 
-![]()
+![Diretorios_docker](../Sprint%206/Exercícios/Evidencias/dir_container_04.jpg)
 
-6. 
-![]()
+5. No diretório python criada em layer_dir, baixei a biblioteca pandas usando o comando:
 
-7. 
-![]()
+```
+pip3 install pandas -t
+```
+Em seguida, conferi se os arquivos foram no diretório corretamente.
 
-8. 
-![]()
+![Diretorio_pandas](../Sprint%206/Exercícios/Evidencias/pandas_cont_05_06.jpg)
 
-9. 
+6. Voltei em layer_dir e compactei o diretório python usando o comando:
+
+```
+zip -r minha-camada-pandas.zip .
+```
+![Zip_python](../Sprint%206/Exercícios/Evidencias/zip_python_07.jpg)
+
+7. Após listar o container em execução por meio de outra janela do terminal. Utilizei o ID do container para salvar o arquivo zip para a maquina local.
+
+![Salvando_zip](../Sprint%206/Exercícios/Evidencias/salvando_zip_local_08.jpg)
+
+8. Fiz uploado do arquivi zip no bucket criado no exercício [AWS_s3](../Sprint%206/Exercícios/Ex_AWS_S3/)
+
 ![Upload_s3](../Sprint%206/Exercícios/Evidencias/upload_zip_09.jpg)
 
-10. 
-![]()
+9. Retornei ao AWS Lambda, criei uma camada e adicionei o link do bucket onde foi salvo o arquivo zip.
 
-11. 
-![]()
+![camada_lambda](../Sprint%206/Exercícios/Evidencias/camada_lambda_10.jpg)
 
-12. 
-![]()
+10. Retornei a funções e editei a função criada anteriormente, adicionando a camada criada.
+
+![add_camada_função](../Sprint%206/Exercícios/Evidencias/add_camada_layer_11.jpg)
+
+11. Executei novamente a função, mas obtive um erro.
+
+![teste_lambda_erro_memoria](../Sprint%206/Exercícios/Evidencias/erro_layer_12.jpg)
+
+12. Atualizei o tamanho da memória e o tempo da função Lambda.
+
+![Atualização_função](../Sprint%206/Exercícios/Evidencias/atualizacao_memoriaetempo_12.jpg)
+
+13. Após executar novamente, consegui executar com êxito.
+
+![novo_teste_lambda](../Sprint%206/Exercícios/Evidencias/novo_teste_13.jpg)
 
 ## AWS Limpeza de recursos
 
-1. 
+Após executar os exercícios, realizei a limpeza do bucket, excluindo todos os arquivos dele.
+
+![limpeza_recursos](../Sprint%206/Exercícios/Evidencias/limpeza_recursos.jpg)
 
 # Certificados
-Após a conclusão dos cursos, recebi 
+Após a conclusão dos cursos, recebi os certificados:
+
+[Noções básicas de Analytics - Parte 1](../Sprint%206/Certificados/Rafaela_C_gomes_Noções_básicas_de_Analytics_na_AWS-Parte1.pdf)
+
+[Noções básicas de Analytics - Parte 2](../Sprint%206/Certificados/Rafaela_gomes_Fundamentos_de_analytics_na_AWS_Parte2.pdf)
+
 
 
