@@ -1,6 +1,8 @@
 # Resumo da Sprint 6
 
-Na sprint 06 foi disponibilizado 
+Na sprint 06 foi disponibilizado diversos cursos da AWS, onde ppude aprender e ver como funcionan o console de diversos recursos da AWS.
+
+Além disso, pude colocar em prática criar bucket, criar banco de dados e tabelas no AWS Athena e realizar consultas no Amazon Lambda.
 
 # Exercícios
 No exercício de Laboratório AWS S3, pude aprender como criar um bucket S3 e realizar configurações para que funcione como hospedagem de conteúdo estático.
@@ -253,7 +255,21 @@ Após a conclusão dos cursos, recebi os certificados:
 
 [Noções básicas de Analytics - Parte 1](../Sprint%206/Certificados/Rafaela_C_gomes_Noções_básicas_de_Analytics_na_AWS-Parte1.pdf)
 
-[Noções básicas de Analytics - Parte 2](../Sprint%206/Certificados/Rafaela_gomes_Fundamentos_de_analytics_na_AWS_Parte2.pdf)
+[Fundamentos de Analytics na AWS- Parte 2](../Sprint%206/Certificados/Rafaela_gomes_Fundamentos_de_analytics_na_AWS_Parte2.pdf)
+
+[Introducttion to Amazon Athena](../Sprint%206/Certificados/Rafaela_gomes_Introduction_to_Amazon_Athena.pdf)
+
+[Serverless Analytics](../Sprint%206/Certificados/Rafaela_gomes_ServerlessAnalytics.pdf)
+
+[Amazon QuickSight - Getting Started](../Sprint%206/Certificados/Rafaela_gomes-Amazon%20QuickSight%20-%20Getting%20Started%20(English).pdf)
+
+[Amazon EMR Getting Started](../Sprint%206/Certificados/Rafaela_gomes-Amazon_EMR_Getting_Started.pdf)
+
+[AWS Glue Getting Started](../Sprint%206/Certificados/Rafaela_gomes-AWS%20Glue%20Getting%20Star.pdf)
+
+[Best Practices for Data Warehousing with Amazon Redshift](../Sprint%206/Certificados/Rafaela_gomes-AWS%20Skill%20Builder%20-%20Best%20Practices%20for%20Data%20Warehousing%20with%20Amazon%20Redshift%20(Portuguese).pdf)
+
+[Getting Started with Amazon Redshift](../Sprint%206/Certificados/Rafaela_gomes-Getting%20Started%20with%20Amazon%20Redshift%20(Portuguese).pdf)
 
 
 
