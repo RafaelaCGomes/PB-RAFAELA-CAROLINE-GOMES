@@ -1,11 +1,11 @@
 # Resumo da Sprint 6
 
-Na sprint 06 foi disponibilizado diversos cursos da AWS, onde ppude aprender e ver como funcionan o console de diversos recursos da AWS.
+Na sprint 06 foi disponibilizado diversos cursos da AWS, onde pude aprender e ver como funcionan o console de diversos recursos da AWS.
 
 Além disso, pude colocar em prática criar bucket, criar banco de dados e tabelas no AWS Athena e realizar consultas no Amazon Lambda.
 
 # Exercícios
-No exercício de Laboratório AWS S3, pude aprender como criar um bucket S3 e realizar configurações para que funcione como hospedagem de conteúdo estático.
+No exercício de Laboratório AWS S3, aprendi como criar um bucket S3 e realizar configurações para que funcione como hospedagem de conteúdo estático.
 
 No exercício o AWS Athena, aprendi como criar banco de dados, tabelas e realizar querys de consulta da tabela e banco de dados criado com base em um arquivo csv.
 
