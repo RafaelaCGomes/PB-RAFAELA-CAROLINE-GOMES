@@ -10,15 +10,15 @@ Como entregáveis, achei melhor não colocar os arquivos originais baixados, uma
 
 Tendo assim:
 
-[Script_pyhton]() - Que carrega os arquivos para o bucket.
+[Script_pyhton](../Desafio/Etapa-01/script.py) - Que carrega os arquivos para o bucket.
 
-[Dockerfile]() - Usado para criar a imagem docker.
+[Dockerfile](../Desafio/Etapa-02/Dockerfile) - Usado para criar a imagem docker.
 
 Após abrir e analizar os arquvios movies.csv e series.csv, fiz algumas análises breves e decidi realizar minhas perguntas com base na franquia Star Wars.
 
 Minha escolha foi partes por eu gostar bastante da franquia e acabei tendo a ideia de ir a fundo em analisar os gastos dos filmes, comparar seus gastos com seus lucros e, além disso, por se tratar de uma franquia muito conhecida, na época em que começou a ser lançada, não havia tanta tecnologia na área cinematográfica, me surgiu uma dúvida em saber, qual a diferença em gastos e lucros comparando com produções mais recentes, pensando na tecnologia usada e o gosto do público com filmes de fantasia.
 
-Tendo assim como pensamento central: Os filmes da franquia Star Wars tiveram grnades alterações na sua receita considerando a época de lançamento e os gastos, assim como outros atores/atrizes tiveram muitas diferenças em sua receita ao comparar os filmes da franquia com outras produções, com o intuíto de entender se o sucesso da franquia está ligado com os recursos gastos ou não.
+Tendo assim como pensamento central: Os filmes da franquia Star Wars tiveram grandes alterações na sua receita considerando a época de lançamento e os gastos, assim como outros atores/atrizes tiveram muitas diferenças em sua receita ao comparar os filmes da franquia com outras produções, com o intuíto de entender se o sucesso da franquia está ligado com os recursos gastos ou não.
 
 Com base nesse pensamento, desenvolvi algumas perguntas:
 
@@ -51,19 +51,22 @@ Com base nesse pensamento, desenvolvi algumas perguntas:
 Ao criar o script, pensei em formas de não deixar as credenciais expostas no código, decidi então receber as credenciais por input.
 
 ````
+aws_access_key_id=input("Digite sua AWS ACCESS KEY ID: ").strip()
+aws_secret_access_key=input("Digite sua AWS SECRET ACESS KEY: ").strip()
+aws_session_token=input("Digite sua SESSION TOKEN: ").strip()
 
 ````
 
 Esse script, inicialmente rodei localmente para ver se os comandos estavam funcionando corretamente e enviando para o bucket.
 
-Em seguida realizei as alterações necessárias, pensando que ele estará sendo executado dentro de um container Docker, tendo como script final: [script.py]()
+Em seguida realizei as alterações necessárias, pensando que ele estará sendo executado dentro de um container Docker, tendo como script final: [script.py](../Desafio/Etapa-01/script.py)
 
 ![script_py](../Evidencias/script_python.jpg)
 
 
 ## [Etapa2: Criação docker](../Desafio/Etapa-02/)
 
-1. Em seguida criei um arquivo [Dockerfile]() para criar uma imagem Docker onde armazenaria os arquivos csv e o script.py.
+1. Em seguida criei um arquivo [Dockerfile](../Desafio/Etapa-02/Dockerfile) para criar uma imagem Docker onde armazenaria os arquivos csv e o script.py.
 
 ![Dockerfile](../Evidencias/script_dockerfile.jpg)
 
@@ -79,13 +82,13 @@ Em seguida realizei as alterações necessárias, pensando que ele estará sendo
 
 ![carregando_container](../Evidencias/carregando_container.jpg)
 
-5. Verifiquei o envio diretamente na plataforma da AWS.
+5. Por fim, verifiquei o envio diretamente na plataforma da AWS.
 
 ![verificação_movies_bucket](../Evidencias/confirmacao_bucket_movies.jpg)
 
 ![verificação_movies_series](../Evidencias/confirmacao_bucket_series.jpg)
 
-## Etapa3: Criação imagem e rodando container
+
 
 
 
