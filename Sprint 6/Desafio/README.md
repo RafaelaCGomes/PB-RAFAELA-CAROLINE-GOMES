@@ -4,7 +4,7 @@ O desafio da sprint 06 se tratou de baixar um arquivo zip disponibilizado na pla
 
 Precisei ler os arquivos inteiros, sem realizar a filtragem de dados e carregar esses arquivos para um bucket s3 através de um script python. 
 
-Além disso, precisei criar uma imagem que contenha o scrip.py e os arquivos csv e rodar um container para executar o scrip.
+Além disso, precisei criar uma imagem que contenha o script.py e os arquivos csv e rodar um container para executar o script.
 
 Como entregáveis, achei melhor não colocar os arquivos originais baixados, uma vez que são padrão para todos e pensando no tamanho de cada arquivo.
 
@@ -54,8 +54,33 @@ Ao criar o script, pensei em formas de não deixar as credenciais expostas no c�
 aws_access_key_id=input("Digite sua AWS ACCESS KEY ID: ").strip()
 aws_secret_access_key=input("Digite sua AWS SECRET ACESS KEY: ").strip()
 aws_session_token=input("Digite sua SESSION TOKEN: ").strip()
-
 ````
+
+Para o caminho pedido no desafio, usei variáveis que fornece a data (Ano/Mes/Dia)
+
+```
+data = datetime.now()
+ano = data.strftime('%Y')  # Ano atual do processamento
+mes = data.strftime('%m')   # Mês atual do procesamento
+dia = data.strftime('%d')   # Dia atual do processamento
+```
+
+E defini variáveis para completar o caminho.
+
+```
+camada_armazenamento = 'Raw'
+origem_dados = 'Local'
+formato_dados = 'CSV'
+```
+
+Ao chamar a função, formatei o caminho no bucket.
+
+```
+#Movies
+especificacao_dados_movies = 'Movies'
+caminho_local_movies = '/app/movies.csv'
+s3_caminho_movies = f"{camada_armazenamento}/{origem_dados}/{formato_dados}/{especificacao_dados_movies}/{ano}/{mes}/{dia}/movies.csv"
+```
 
 Esse script, inicialmente rodei localmente para ver se os comandos estavam funcionando corretamente e enviando para o bucket.
 
