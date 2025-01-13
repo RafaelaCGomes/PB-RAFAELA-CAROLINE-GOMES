@@ -23,8 +23,11 @@ Para ficar de fácil entendimento, realizarei as evidências dos exercícios con
 ### Etapa 2
 Realizei o exemplo fornecido para testar se estava funcionando corretamente.
 
+1. Digitei o exemplo fornecido e o executei.
 
+![Exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Evidencias/Ex_exemplo_TMDB.jpg)
 
+![Resultado_exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Evidencias/Ex_exemplo_TMDB_02.jpg)
 
 
 
