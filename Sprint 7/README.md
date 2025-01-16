@@ -3,7 +3,7 @@
 
 
 # Exercícios
-
+No exercício do TMDB, criei minha conta na plataforma, configurei a conta e tive acesso a chave da APPI, sendo que após, realizei um teste local para ver se estava funcionando.
 
 
 # Evidências
@@ -16,7 +16,7 @@ Para ficar de fácil entendimento, realizarei as evidências dos exercícios con
 ### Etapa 1
 1. Criei minha conta no portal do TMDB e confirmei o e-mail.
 
-![Conta_criada_TMDB](../Sprint%207/Exercícios/Evidencias/Conta_criada_TMDB.jpg)
+![Conta_criada_TMDB](../Sprint%207/Exercícios/Ex_TMDB/Evidencias/Conta_criada_TMDB.jpg)
 
 2. Após configurar o perfil, tive acesso a chave da API.
 
@@ -25,9 +25,9 @@ Realizei o exemplo fornecido para testar se estava funcionando corretamente.
 
 1. Digitei o exemplo fornecido e o executei.
 
-![Exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Evidencias/Ex_exemplo_TMDB.jpg)
+![Exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Ex_TMDB/Evidencias/Ex_exemplo_TMDB.jpg)
 
-![Resultado_exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Evidencias/Ex_exemplo_TMDB_02.jpg)
+![Resultado_exemplo_exercicio_tmdb](../Sprint%207/Exercícios/Ex_TMDB/Evidencias/Ex_exemplo_TMDB_02.jpg)
 
 
 
