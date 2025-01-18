@@ -1,9 +1,13 @@
-# Resumo da Sprint 6
+# Resumo da Sprint 7
 
 
 
 # Exercícios
 No exercício do TMDB, criei minha conta na plataforma, configurei a conta e tive acesso a chave da APPI, sendo que após, realizei um teste local para ver se estava funcionando.
+
+No exercício de Glue, aprendi na na prática como criar IAM Role, configurar a conta para usar o AWS Glue,Configurar o Lake Formation, criar e testar jobs e por fim, criar crawlers.
+
+
 
 
 
@@ -111,7 +115,23 @@ Tendo como resultado após rodas o job.
 ![exercicio_etapa5.2_b](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Etapa5.2_s3_e.jpg)
 
 ### Etapa 6
+Criei e rodei uma crawler conforme as indicações do exercício. 
 
+![Criando_crawler-01](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-01.jpg)
+
+![Criando_crawler-02](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-02.jpg)
+
+![Criando_crawler-03](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-03.jpg)
+
+![Rodando_crawler-04](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-04.jpg)
+
+![Crawler_database-05](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-05.jpg)
+
+![Crawler_Athena-06](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-06.jpg)
+
+![Crawler_Athena-0](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-07.jpg)
+
+Após a comsulta, resultando na tabela [Tabela_resultado_crawler](../Sprint%207/Exercícios/Lab_Glue/ac0717a1-889c-4551-91c3-76861f259507.csv)
 
 ## Exercício Spark
 
