@@ -1,5 +1,8 @@
 # Resumo da Sprint 7
 
+Nessa sprint pude interargir com serviços da AWS, além de aprender como se trabalha com API e Spark.
+
+Para mim, foi um desafio trabalhar com a API e Sppark, por nunca ter tido contato com ambos, precisei aprender do zero para conseguir entender e realizar os exercícios.
 
 
 # Exercícios
@@ -7,7 +10,7 @@ No exercício do TMDB, criei minha conta na plataforma, configurei a conta e tiv
 
 No exercício de Glue, aprendi na na prática como criar IAM Role, configurar a conta para usar o AWS Glue,Configurar o Lake Formation, criar e testar jobs e por fim, criar crawlers.
 
-
+No exercicio de Spark, aprendi como usar spark e utiliza-lo para realizar consultas, nesse exercício em específico, foi necessário abrir um arquivo README.md, e contar a quantidade de palavras do arquivo. 
 
 
 
@@ -131,12 +134,21 @@ Criei e rodei uma crawler conforme as indicações do exercício.
 
 ![Crawler_Athena-0](../Sprint%207/Exercícios/Lab_Glue/Evidencias/Crawler-07.jpg)
 
-Após a comsulta, resultando na tabela [Tabela_resultado_crawler](../Sprint%207/Exercícios/Lab_Glue/ac0717a1-889c-4551-91c3-76861f259507.csv)
+Após a consulta, resultando na tabela [Tabela_resultado_crawler](../Sprint%207/Exercícios/Lab_Glue/ac0717a1-889c-4551-91c3-76861f259507.csv)
 
 ## Exercício Spark
+Nesse exercício, usei o README.md da sprint 06 para realizar o exercício.
 
-### Etapa 1: 
+Achei mais fácil, realizar ele direto pelo Google Colab.
 
+Para isso, construi o [Exercicio_spark.ippynb](../Sprint%207/Exercícios/Ex_Spark/Exercicio_spark.ipynb), gerando como resultado [palavras_contadas_readme.txt](../Sprint%207/Exercícios/Ex_Spark/palavras_contadas_readme.txt)
+
+![Spark_01](../Sprint%207/Exercícios/Ex_Spark/Evidencias/spark_01.jpg)
+
+![Spark_02](../Sprint%207/Exercícios/Ex_Spark/Evidencias/spark_02.jpg)
+
+![Spark_03](../Sprint%207/Exercícios/Ex_Spark/Evidencias/spark_03.jpg)
 
 
 # Certificados
+Nessa sprint não houve cursos da AWS, o único certificado obtido foi o do curso da Udemy.
