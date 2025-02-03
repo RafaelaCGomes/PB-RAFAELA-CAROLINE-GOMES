@@ -8,9 +8,9 @@ O arquivo [script_glue_csv.py](./Scripts/script_glue_csv.py) foi usado para o tr
 
 Já o script [script_glue_json.py](./Scripts/script_glue_json.py) foi usado para o tratamento e transformação dos jsons salvos no bucket de origem do TMDB.
 
-Ao desenvolver do desafio, acabei alterando algumas perguntas do desafio final, chegando até o mometo com as seguintes perguntas norteadoras da análise:
+Ao desenvolver do desafio, acabei alterando algumas perguntas do desafio final, chegando até o momento com as seguintes perguntas norteadoras da análise:
 
-1️- Qual foi o filme com maior e menor votos da franquia Star Wars? Em quais anos foram lançados esses dois filmes? (Top 2 filmes + votados e menos votados da franquia)
+1- Qual foi o filme com maior e menor votos da franquia Star Wars? Em quais anos foram lançados esses dois filmes? (Top 2 filmes + votados e menos votados da franquia)
 
 2- Pensando nos anos de lançamento desses dois filmes (maior e menor votação Star Wars), quais outros filmes que possuem votação maior/menor que esses, sem serem da franquia Star Wars? ( 2 filmes mais votados e 2 menos votados fora da franquia, do mesmo ano dos filmes Star Wars)
 
@@ -102,13 +102,13 @@ df = df_dynamic.toDF()
 ```
 Em seguida, realizei alguns tratamentos das colunas que achei necessárias conforme a minha análise.
 
-Comecei excluindo a coluna spoken_languages, pois não irei utiliza-la e explodi as informações das colunas production_companies, production_countries e genres.
+Comecei excluindo a coluna spoken_languages, pois não irei utilizá-la e explodi as informações das colunas production_companies, production_countries e genres.
 
 ![etapa03_02](../Evidencias/etapa03_02.jpeg)
 
 Nesse momento percebi que ficaria mais organizado se eu separasse a coluna production_companies em outro dataframe para ser particionado e salvo em um arquivo parquet separado, pois a coluna contém informações importantes que usarei em minha análise.
 
-Para isso, o primeiro dataframe defini como movies que contém as colunas com informações sobre os filmes e uma coluna com o id_production_companies para garantir o vinculo com o outro dataframe.
+Para isso, o primeiro dataframe defini como movies que contém as colunas com informações sobre os filmes e uma coluna com o id_production_companies para garantir o vínculo com o outro dataframe.
 
 ```
 # Criar DataFrame do primeiro Parquet - movies
