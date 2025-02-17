@@ -20,7 +20,7 @@ View da tabela fato filmes
 ![View_fato_filmesA](../Evidencias/etapa01_fato_filmesA.jpeg)
 
 View da dimensão filme
-![View_dim_filme](./Evidencias/etapa01_dim_filme.jpeg)
+![View_dim_filme](../Evidencias/etapa01_dim_filme.jpeg)
 
 ![View_dim_filmeA](../Evidencias/etapa01_dim_filmeA.jpeg)
 

@@ -18,3 +18,5 @@ No meu tempo livre, gosto de ciclismo, academia, corrida ao ar livre e leitura, 
 5. [Sprint_5](./Sprint%205/)
 6. [Sprint 6](./Sprint%206/)
 7. [Sprint 7](./Sprint%207/)
+8. [Sprint 8](./Sprint%208/)
+9. [Sprint 9](./Sprint%209/)
